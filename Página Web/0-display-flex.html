@@ -4,23 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos - Display Flex</title>
+    <title>Fundamentos - Flex wrap</title>
     <style>
-        .flex{
-            max-width: 300px;
-            padding: 10px;
+        .flex-container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-content: space-around;
             border: 2px solid black;
+            padding: 5px;
+            width: 550px;
+            height: 800px;
         }
-
         .item{
-            background-color: aqua;
-            margin: 5px;
+            font-size: 16px;
+            height: 132px;
+            width: 95px;
+            margin: 2px;
+            text-align: center;
+        }
+        .entrada{
+            background-color: lightsalmon;
+        }
+        .obst{
+            background-color: lightcoral;
+        }
+        .ctrl{
+            background-color: lightseagreen;
+        }
+        .tesouro{
+            background-color: lightgreen;
         }
     </style>
 </head>
 <body>
-    <div class="item">item 1</div>
-    <div class="item">item 2</div>
-    <div class="item">item 3</div>
+    <h2>
+        Organização das Cartas
+    </h2>
+    <div class="flex-container">
+        <div class="item entrada">Entrada<br>(1)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(1)</div>
+        <div class="item obst">Sala de Obstáculo<br>(1)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(2)</div>
+        <div class="item entrada">Entrada<br>(2)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(3)</div>
+        <div class="item obst">Sala de Obstáculo<br>(2)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(4)</div>
+        <div class="item obst">Sala de Obstáculo<br>(3)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(5)</div>
+        <div class="item obst">Sala de Obstáculo<br>(4)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(6)</div>
+        <div class="item ctrl">Controle Central<br>(1)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(7)</div>
+        <div class="item obst">Sala de Obstáculo<br>(5)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(8)</div>
+        <div class="item obst">Sala de Obstáculo<br>(6)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(9)</div>
+        <div class="item obst">Sala de Obstáculo<br>(7)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(10)</div>
+        <div class="item entrada">Entrada<br>(3)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(11)</div>
+        <div class="item obst">Sala de Obstáculo<br>(8)</div>
+        <div class="item tesouro">Sala de Tesouros<br>(12)</div>
+        <div class="item entrada">Entrada<br>(4)</div>
+    </div>
 </body>
 </html>

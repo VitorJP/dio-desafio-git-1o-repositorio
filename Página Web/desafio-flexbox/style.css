@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: rgb(243,243,243);
+    width: 992px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.geral{
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.geral .boardgames img{
+    height: 40rem;
+}
+
+.menu{
+    height: 90vh;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.caixa{
+    background-color: white;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.caixa .continuar{
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    align-self: center;
+}
+
+.caixa .sair a{
+    display: flex;
+    justify-content: stretch;
+    justify-items: stretch;
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 200;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    align-self: center;
+}
+
+.caixa p{
+    font-size: 13px;
+    color: grey;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo h1{
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.titulo .icone{
+    height: 32px;
+    width: 32px;
+}
+
+.foto-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 35%;
+    max-height: 35%;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.link-azul{
+    font-size: 13px;
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 800;
+}
+
+.semcaixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 0px;
+}
+
+.semcaixa p{
+    margin-bottom: 20px;
+}
+
+.lojas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lojas img{
+    max-width: 40%;
+}
+
+@media(max-width: 1024px){
+    .geral{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: white;
+    }
+    .geral{
+        width: 90%;
+    }
+    .boardgames{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+    }
+    .caixa{
+        border: 1px solid transparent;
+    }
+}
